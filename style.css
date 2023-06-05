@@ -1,0 +1,70 @@
+body {
+	background-color: #cccccc;
+	font-family: "Courier New";
+}
+
+footer {
+	font-size: 16px;
+}
+
+.flex-child {
+	box-sizing: border-box;
+}
+
+.sidenav {
+	top: 0;
+	left: 0;
+	height: 100%;
+	z-index: 1;
+	background-color: #000000;
+	overflow-x: hidden;
+	padding-right: 10px;
+	position: fixed;
+	width: 230px; 
+}
+
+.sidenav a {
+	padding: 6px 8px 6px 16px;
+	font-size: 25px;
+	color: #cccccc;
+	display: block;
+}
+
+.sidenav a:hover {
+	color: #ffffff;
+}
+
+.main {
+	font-size: 20px;
+	margin-left: 230px;
+}
+
+.circle-container {
+	display: block;
+	margin: auto;
+	width: 200px;
+	height: 200px;
+	background-image: url("me.jpg");
+	background-size: cover;
+	background-position: -60px;
+	border-radius: 100%;
+}
+
+@media screen and (max-width: 800px) {
+	.flex-container {
+		flex-direction: column;
+	}
+
+	.flex-child {
+		box-sizing: border-box;
+	}
+
+	.sidenav {
+		width: 100%;
+		position: static;
+	}
+
+	.main {
+		margin-left: 0;
+	}
+}
