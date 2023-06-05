@@ -1,3 +1,172 @@
+<!DOCTYPE html>
 <html>
-  Kalispera
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Home</title>
+	<style>
+		body {
+			background-color: #cccccc;
+			font-family: "Courier New";
+		}
+
+		footer {
+			font-size: 16px;
+		}
+
+		.flex-child {
+			box-sizing: border-box;
+		}
+	
+		.sidenav {
+			top: 0;
+			left: 0;
+			height: 100%;
+			z-index: 1;
+			background-color: #000000;
+			overflow-x: hidden;
+			padding-right: 10px;
+			position: fixed;
+			width: 230px; 
+		}
+	
+		.sidenav a {
+			padding: 6px 8px 6px 16px;
+			font-size: 25px;
+			color: #cccccc;
+			display: block;
+		}
+	
+		.sidenav a:hover {
+			color: #ffffff;
+		}
+	
+		.main {
+			font-size: 20px;
+			margin-left: 230px;
+		}
+	
+		.circle-container {
+			display: block;
+			margin: auto;
+			width: 200px;
+			height: 200px;
+			background-image: url("new.jpg");
+			background-size: cover;
+			background-position: -60px;
+			border-radius: 100%;
+		}
+
+	@media screen and (max-width: 800px) {
+		.flex-container {
+			flex-direction: column;
+		}
+
+		.flex-child {
+			box-sizing: border-box;
+		}
+
+		.sidenav {
+			width: 100%;
+			position: static;
+		}
+
+		.main {
+			margin-left: 0;
+		}
+  	}
+	</style>
+
+</head>
+	<body>
+		<div class="flex-child sidenav">
+			<a href="#home"><div class="circle-container"></div></a>
+			<hr>
+			<a href="#about_me">About me</a>
+			<a href="#education">Education</a>
+			<a href="#skills">Skills</a>
+			<a href="#contact">Contact</a>
+		</div>	
+		<div class="flex-child main">
+			<div id='home'>
+				<h1>Welcome to Dimostheni's Portfolio</h1>
+			</div>
+			<hr>
+			<div id='about_me'>
+				<h4>ABOUT ME</h4>
+				<p>&emsp;My name is Dimosthenis Georgoulas, and I am a postgraduate student at the Department of Computer Science and Engineering at the University of Ioannina, Greece. I am enjoying contributing to projects and creating innovative solutions. Always learning and improving.</p>
+				<p>&emsp;From the beginning of my education until today, I have acquired several skills in the field of Computer Science and Engineering. I really enjoy both Software and Hardware sectors, focusing mainly to the Hardware sector. </p>
+			</div>
+			<hr>
+			<div id='education'>
+				<h4>EDUCATION</h4>
+
+				<h5>University</h5>
+				<p>
+					MSc Computer Science
+					<br>
+					University of Ioannina, Greece (2022 - today)
+					<br>
+					In Progress...
+				</p>
+				<p>
+					MSci Computer Science
+					<br>
+					University of Ioannina, Greece (2017 - 2022)
+					<br>
+					July 2022 - GPA: 7.55/10
+				</p>
+			</div>
+			<hr>
+			<div id='skills'>
+				<h4>SKILLS</h4>
+				- During my education, i had the oportunity to learn multiple programming languages. I have also gained some exprerience by myself trying different projects and tasks.
+				<h5>Software</h5>
+				-Programming Languages
+				<ul>
+					<li>Python: ★★★★☆</li>
+					<li>Java: ★★★★☆</li>
+					<li>Matlab: ★★★★☆</li>
+					<li>C: ★★★☆☆</li>
+					<li>PHP: ★★★☆☆</li>
+					<li>SQL: ★★★☆☆</li>
+					<li>HTML: ★★☆☆☆</li>
+					<li>JavaScript: ★★☆☆☆</li>
+				</ul>
+				<h5>Hardware</h5>
+				-Platforms
+				<ul>
+					<li>STM32 Boards: ★★★★☆</li>
+					<li>ESP32: ★★★★☆</li>
+					<li>Arduino: ★★★★☆</li>
+				</ul>
+				-Softwares
+				<ul>
+					<li>Cadence: ★★☆☆☆</li>
+					<li>Orcad: ★★☆☆☆</li>
+				</ul> 		
+			</div>
+			<hr>
+			<div id='contact'>
+				<h4>CONTACT</h4>
+				<h5>Info</h5>
+				<p>Email: dimosgeo99@gmail.com</p>
+				<p>Phone: -</p>
+				<p>Address:	Ioannina, Epirus, Greece, 45500</p>
+				<h5>Pages</h5>
+				<p>LinkedIn profile: <a href="https://www.linkedin.com/in/dimosthenis-georgoulas">https://www.linkedin.com/in/dimosthenis-georgoulas</a></p>
+				<p>Github profile: <a href="https://github.com/dimosgeo">https://github.com/dimosgeo</a></p>
+				<h5>Web Links</h5>
+				<p>This link: <a href="https://dimosgeo.github.io/">https://dimosgeo.github.io/</a></p>
+				<p>CS UOI: <a href="cs.uoi.gr/~dgeorgoulas/">cs.uoi.gr/~dgeorgoulas/</a></p>
+			</div>
+			<hr>
+			<footer style="float: left;">
+				<p>~Life: where bits of experience merge into the byte of existence.~</p>
+			</footer>
+			<footer style="float: right;">
+				<p>Created by Georgoulas Dimosthenis. © 2023</p>
+			</footer>
+		</div>		
+	</body>
 </html>
